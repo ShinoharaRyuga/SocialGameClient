@@ -23,7 +23,6 @@ namespace Outgame
             UIStatusBar.Show();
 
             Debug.Log(EventHelper.GetAllOpenedEvent());
-            Debug.Log(EventHelper.IsEventOpen(1));
             Debug.Log(EventHelper.IsEventGamePlayable(1));
         }
 
@@ -47,6 +46,10 @@ namespace Outgame
             UIManager.NextView(ViewID.Quest);
         }
 
+        public void GoEvent()
+        {
+            UIManager.NextView(ViewID.Event);
+        }
 
 
         public void DialogTest()
